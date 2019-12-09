@@ -1,0 +1,12 @@
+# ESLint ignore 自行配置，不校验弹出的webpack配置
+build
+config
+public
+scripts
+node_modules
+
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
