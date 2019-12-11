@@ -8,6 +8,8 @@ import CommentList from './Component/CommentList'
 import Hoc from './Component/Hoc'
 import Composition from './Component/Composition'
 import HookTest from './Component/HookTest'
+import ContextTest from './Component/ContextTest'
+import KForm from './Component/KForm'
 
 function App() {
     return (
@@ -28,11 +30,16 @@ function App() {
                 <Clock></Clock>
                 <CartSample title="购物车"></CartSample>
             </header> */}
-            <AntdTest></AntdTest>
+
+            {/* <AntdTest></AntdTest>
             <CommentList></CommentList>
             <Hoc></Hoc>
             <Composition></Composition>
             <HookTest></HookTest>
+            <ContextTest></ContextTest> */}
+
+            {/* 自制表单 */}
+            <KForm></KForm>
         </div>
     )
 }
