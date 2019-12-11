@@ -7,6 +7,7 @@ import AntdTest from './Component/AntdTest'
 import CommentList from './Component/CommentList'
 import Hoc from './Component/Hoc'
 import Composition from './Component/Composition'
+import HookTest from './Component/HookTest'
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
             <CommentList></CommentList>
             <Hoc></Hoc>
             <Composition></Composition>
+            <HookTest></HookTest>
         </div>
     )
 }
