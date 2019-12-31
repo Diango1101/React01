@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 
 // 容器组件
 export default class CommentList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            comments: [],
+            comments: []
         }
     }
     componentDidMount() {
         setInterval(() => {
             this.setState({
                 comments: [
-                    { body: 'oh you can well dance', author: 'kiko' },
-                    { body: 'oh you can dance well', author: 'lal' },
-                ],
+                    { body: "oh you can well dance", author: "kiko" },
+                    { body: "oh you can dance well", author: "lal" }
+                ]
             })
         }, 1000)
     }
@@ -34,7 +34,7 @@ export default class CommentList extends Component {
 // 新版本用momo函数组件化
 // memo高阶组件  16.6以后
 const Comment = React.memo(function(data) {
-    console.log('render comment')
+    console.log("render comment")
     return (
         <div>
             <p>{data.body}</p>

@@ -11,7 +11,12 @@
     "react": "^16.12.0",
     "react-app-rewired": "^2.0.2-next.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -35,6 +40,11 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-transform-decorators-legacy": "^1.3.5"
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "prettier": "1.19.1",
+    "prettier-eslint": "^9.0.1"
   }
 }

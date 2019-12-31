@@ -22,7 +22,7 @@ function WelcomeDialog(props) {
 const Api = {
     getUser() {
         return { name: 'diango', age: 22 }
-    },
+    }
 }
 function Fetcher(props) {
     const user = Api[props.name]()
@@ -32,7 +32,7 @@ function Fetcher(props) {
 function Filter({ children, type }) {
     return (
         <div>
-            {React.Children.map(children, (child) => {
+            {React.Children.map(children, child => {
                 if (child.type !== type) {
                     return
                 }
@@ -45,7 +45,7 @@ function Filter({ children, type }) {
 // 修改children
 function RadioGroup(props) {
     console.log(
-        React.Children.map(props.children, (child) => {
+        React.Children.map(props.children, child => {
             // vdom不可更改，克隆一个新的去改才行
             // child.props.name = props.name
             return React.cloneElement(child, { name: props.name })
@@ -53,7 +53,7 @@ function RadioGroup(props) {
     )
     return (
         <div id="radiogroup">
-            {React.Children.map(props.children, (child) => {
+            {React.Children.map(props.children, child => {
                 // vdom不可更改，克隆一个新的去改才行
                 // child.props.name = props.name
                 return React.cloneElement(child, { name: props.name })
